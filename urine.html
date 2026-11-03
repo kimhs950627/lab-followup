@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>혈뇨와 단백뇨 — 검진 후속관리</title>
+<meta name="description" content="검진에서 발견된 혈뇨와 단백뇨의 재검 주기, 영상검사, 의뢰 기준을 정리.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Lab Follow-up · 검진 후속관리</a>
+    <nav class="nav" aria-label="장 이동">
+      <a href="index.html">개요</a>
+      <a href="urine.html" aria-current="page">소변</a>
+      <a href="liver.html">간기능</a>
+      <a href="thyroid.html">갑상선</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Chapter 01 · Urine</p>
+      <h1>혈뇨와 단백뇨</h1>
+      <p class="lede">무증상 혈뇨의 절반 이상은 정밀검사를 해도 원인을 찾지 못한다. 그래서 이 장의 핵심은
+        “원인 찾기”보다 <strong>언제까지, 몇 번 확인하고, 언제 넘길 것인가</strong>다.</p>
+    </div>
+
+    <section aria-labelledby="h-flow">
+      <h2 id="h-flow"><span class="num">01 — Flow</span>검진 혈뇨의 경로</h2>
+
+      <figure class="flow">
+        <svg viewBox="0 0 880 620" role="img" aria-labelledby="u1 u1d">
+          <title id="u1">검진에서 발견된 혈뇨의 추적 흐름</title>
+          <desc id="u1d">1차 재검에서 양성이면 전문과 의뢰 후 영상검사, 음성이면 3개월 간격 2회 재검.</desc>
+          <defs>
+            <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#8f8878"/>
+            </marker>
+            <style>
+              .b { fill: #fffdf8; stroke: #cfc6b3; stroke-width: 1.2; }
+              .d { fill: #f1ece1; stroke: #8f8878; stroke-width: 1.2; }
+              .t { font-size: 14px; fill: #1a1714; }
+              .s { font-size: 11.5px; fill: #6f6759; }
+              .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; fill: #0f5f63; letter-spacing: .08em; }
+              .ln { stroke: #8f8878; stroke-width: 1.2; fill: none; marker-end: url(#a2); }
+              .lbl { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; fill: #9c3d1d; }
+            </style>
+          </defs>
+
+          <rect class="b" x="300" y="14" width="280" height="54" rx="3"/>
+          <text class="k" x="316" y="36">ENTRY</text>
+          <text class="t" x="316" y="56">검진 요검사 혈뇨 (무증상)</text>
+
+          <path class="ln" d="M440 68 V104"/>
+          <rect class="d" x="320" y="104" width="240" height="72" rx="3"/>
+          <text class="s" x="336" y="126">생리기간·오염 배제</text>
+          <text class="t" x="336" y="147">중간뇨로 1차 재검</text>
+          <text class="s" x="336" y="165">UA 현미경 RBC 확인</text>
+
+          <path class="ln" d="M320 140 H150 V214"/>
+          <path class="ln" d="M560 140 H730 V214"/>
+          <text class="lbl" x="176" y="132">양성</text>
+          <text class="lbl" x="654" y="132">음성</text>
+
+          <rect class="b" x="40" y="214" width="240" height="76" rx="3"/>
+          <text class="s" x="56" y="236">신장내과 · 비뇨의학과 의뢰</text>
+          <text class="t" x="56" y="258">CT · 방광경검사</text>
+          <text class="s" x="56" y="276">(반복되면 요세포검사)</text>
+
+          <rect class="b" x="600" y="214" width="240" height="76" rx="3"/>
+          <text class="s" x="616" y="236">3개월 간격 2회 재검</text>
+          <text class="t" x="616" y="258">두 번 모두 정상이면</text>
+          <text class="s" x="616" y="276">추적 종료 · 일반 검진</text>
+
+          <path class="ln" d="M160 290 V330 H440 V356"/>
+          <path class="ln" d="M720 290 V330 H440 V356"/>
+
+          <rect class="d" x="300" y="356" width="280" height="72" rx="3"/>
+          <text class="s" x="316" y="378">영상·구조적 병변</text>
+          <text class="t" x="316" y="399">없음 → 원내 추적</text>
+          <text class="s" x="316" y="417">3 · 6 · 12개월 UA/lab</text>
+
+          <path class="ln" d="M440 428 V468"/>
+
+          <rect class="b" x="250" y="468" width="380" height="76" rx="3" fill="#f4e2d9" stroke="#9c3d1d"/>
+          <text class="k" x="266" y="490" fill="#9c3d1d">RED FLAG 3회 중 1회라도</text>
+          <text class="s" x="266" y="510">하부요로증상 · 육안적 혈뇨 · 단백뇨 · 신기능 저하</text>
+          <text class="s" x="266" y="528">PSA 이상 · 영상 이상 → 재의뢰 (CT/방광경)</text>
+
+          <path class="ln" d="M440 544 V574"/>
+          <rect class="b" x="330" y="574" width="220" height="40" rx="3"/>
+          <text class="s" x="346" y="599">모두 정상이면 추적 종료</text>
+        </svg>
+        <figcaption>그림 1. 항혈소판제·항응고제를 복용 중이어도 평가는 동일하게 한다.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="h-def">
+      <h2 id="h-def"><span class="num">02 — 기준</span>숫자로 보는 정의</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>혈뇨·단백뇨 판정 기준 (원노트 정리)</caption>
+          <thead><tr><th>항목</th><th>기준</th><th>메모</th></tr></thead>
+          <tbody>
+            <tr><td>유의한 현미경 혈뇨</td><td>3회 UA 중 &gt;3 RBC/HPF</td><td>한 번의 우연한 결과로 판단하지 않음</td></tr>
+            <tr><td>즉시 평가</td><td>육안적 혈뇨 또는 spot urine &gt;100 RBC/HPF</td><td>CT·방광경 등 적극 평가</td></tr>
+            <tr><td>단백뇨 정상 상한</td><td>소변 단백 &lt;150 mg/day</td><td>알부민 기준 &lt;30 mg/day</td></tr>
+            <tr><td>병적 단백뇨 가능성</td><td>dipstick 3+ 이상</td><td>(+)도 재검 필요</td></tr>
+            <tr><td>24시간 단백 환산</td><td>24h 단백(mg) ≈ 1000 × UPCR</td><td>UPCR 0.48 ≈ 480 mg/day</td></tr>
+            <tr><td>기립성 단백뇨</td><td>아침 첫 소변 음성, 활동 후 양성</td><td>UPCR 0.001 이하, 1 g/day 이하</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-prot">
+      <h2 id="h-prot"><span class="num">03 — Proteinuria</span>단백뇨만 나온 경우</h2>
+      <ol>
+        <li><strong>일과성인지 먼저</strong> — 심한 운동, 조영제, 발열, 약물, 농축뇨. 재검으로 확인한다.</li>
+        <li><strong>고립성 단백뇨</strong>면 4~6주 후 재검. 운동은 최소 1주일 쉬고 채취한다.</li>
+        <li>재검에서 사라지면 <strong>연 1회</strong> 추적으로 충분하다.</li>
+        <li>지속되면 <strong>기립성 단백뇨</strong>를 감별한다(아침 첫 소변과 낮 소변 비교).</li>
+        <li>기립성이 아니면 <strong>신장내과 의뢰</strong>. 당뇨·고혈압이 원인이면 혈당·혈압 조절이 우선이고 3개월 단위로 본다.</li>
+      </ol>
+      <div class="note">
+        <span class="label">원노트 메모</span>
+        <p>무증상 혈뇨에서 신생검까지 간 증례의 6.4%만 정상이었다. 반대로 검사를 다 해도 60%는 원인을 못 찾는다.
+          양쪽 사실을 같이 기억해야 환자 설명이 흔들리지 않는다.</p>
+      </div>
+      <p class="src">출처: 원노트 <em>Nephro 학회 정리</em> (2026-09-17) — 검진상 Urine Lab 정리.</p>
+    </section>
+
+    <div class="pager">
+      <a href="index.html">← 개요</a>
+      <a href="liver.html">간수치 상승 →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>개인 학습 정리. 진료 지침을 대체하지 않는다.</p>
+    <p><a href="https://kimhs950627.github.io/">← 학습 페이지 허브</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

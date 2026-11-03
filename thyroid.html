@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>무증상 갑상선기능이상 — 검진 후속관리</title>
+<meta name="description" content="검진에서 발견된 TSH 이상의 재검 주기, 치료 시작 조건, 고령자 기준을 정리.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Lab Follow-up · 검진 후속관리</a>
+    <nav class="nav" aria-label="장 이동">
+      <a href="index.html">개요</a>
+      <a href="urine.html">소변</a>
+      <a href="liver.html">간기능</a>
+      <a href="thyroid.html" aria-current="page">갑상선</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Chapter 03 · Thyroid</p>
+      <h1>무증상 갑상선기능이상</h1>
+      <p class="lede">검진 보편화로 무증상 이상은 흔하다(남 6.5%, 여 16.4%). 그러나
+        <strong>한 번의 수치로 치료를 시작하지 않는다.</strong> 3개월 뒤 재검해서 판단한다.</p>
+    </div>
+
+    <section aria-labelledby="t-flow">
+      <h2 id="t-flow"><span class="num">01 — Flow</span>TSH가 높을 때</h2>
+
+      <figure class="flow">
+        <svg viewBox="0 0 880 560" role="img" aria-labelledby="t1 t1d">
+          <title id="t1">무증상 TSH 상승의 판단 흐름</title>
+          <desc id="t1d">3개월 후 재검하고 TSH 10 초과 또는 TPO 양성이면 치료, 70세 이상은 경과관찰.</desc>
+          <defs>
+            <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#8f8878"/>
+            </marker>
+            <style>
+              .b { fill: #fffdf8; stroke: #cfc6b3; stroke-width: 1.2; }
+              .d { fill: #f1ece1; stroke: #8f8878; stroke-width: 1.2; }
+              .t { font-size: 14px; fill: #1a1714; }
+              .s { font-size: 11.5px; fill: #6f6759; }
+              .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; fill: #0f5f63; letter-spacing: .08em; }
+              .ln { stroke: #8f8878; stroke-width: 1.2; fill: none; marker-end: url(#a4); }
+              .lbl { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; fill: #9c3d1d; }
+            </style>
+          </defs>
+
+          <rect class="b" x="290" y="12" width="300" height="52" rx="3"/>
+          <text class="k" x="306" y="34">ENTRY</text>
+          <text class="t" x="306" y="54">TSH 상승, fT4 정상 (무증상)</text>
+
+          <path class="ln" d="M440 64 V100"/>
+          <rect class="d" x="300" y="100" width="280" height="66" rx="3"/>
+          <text class="t" x="316" y="124">3개월 후 재검</text>
+          <text class="s" x="316" y="146">TFT + anti-TPO (일시적 상승 배제)</text>
+
+          <path class="ln" d="M300 133 H160 V196"/>
+          <path class="ln" d="M580 133 H720 V196"/>
+          <text class="lbl" x="186" y="125">TSH &gt; 10 또는 TPO(+)</text>
+          <text class="lbl" x="646" y="125">TSH 6.8 ~ 10</text>
+
+          <rect class="b" x="30" y="196" width="290" height="96" rx="3"/>
+          <text class="k" x="46" y="218">TREAT</text>
+          <text class="s" x="46" y="240">해시모토 가능성, 치료 시작</text>
+          <text class="s" x="46" y="260">레보티록신 1.6 µg/kg/day</text>
+          <text class="s" x="46" y="278">75 kg → 약 120 µg/day</text>
+
+          <rect class="b" x="560" y="196" width="290" height="96" rx="3"/>
+          <text class="k" x="576" y="218">CONSIDER</text>
+          <text class="s" x="576" y="240">20~50% 자연 정상화</text>
+          <text class="s" x="576" y="260">연 2~5% overt hypo 로 이행</text>
+          <text class="s" x="576" y="278">나이·LDL·증상으로 결정</text>
+
+          <path class="ln" d="M175 292 V330 H440 V356"/>
+          <path class="ln" d="M705 292 V330 H440 V356"/>
+
+          <rect class="d" x="270" y="356" width="340" height="76" rx="3"/>
+          <text class="k" x="286" y="378">AGE CHECK</text>
+          <text class="s" x="286" y="400">70세 이상 — 정상 상한 7.5까지 인정</text>
+          <text class="s" x="286" y="418">치료 이득 입증 안 됨 → 6~12개월 추적</text>
+
+          <path class="ln" d="M440 432 V466"/>
+
+          <rect class="b" x="240" y="466" width="400" height="80" rx="3"/>
+          <text class="k" x="256" y="488">MONITOR</text>
+          <text class="s" x="256" y="510">치료 시 목표 TSH 0.5 ~ 2.5</text>
+          <text class="s" x="256" y="528">고령·심질환자는 12.5~25 µg부터 시작</text>
+
+          <path class="ln" d="M640 506 H760 V396"/>
+          <text class="lbl" x="700" y="540">재상승 시 치료</text>
+        </svg>
+        <figcaption>그림 1. 재검 중 TSH가 2배 이상 오르거나 20 이상이면 추적 계획을 앞당겨 치료를 시작한다.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="t-table">
+      <h2 id="t-table"><span class="num">02 — Numbers</span>기준 정리</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>갑상선기능 수치와 판단</caption>
+          <thead><tr><th>상황</th><th>기준</th><th>판단</th></tr></thead>
+          <tbody>
+            <tr><td>정상(전통적)</td><td>TSH 0.4~4, fT4 1~2</td><td>한국인 기준은 다름</td></tr>
+            <tr><td>경도 아급성 저하</td><td>TSH 6.8~10</td><td>대부분 자연 회복, 경과관찰 우선</td></tr>
+            <tr><td>중증 아급성 저하</td><td>TSH &gt; 10</td><td>치료 시작</td></tr>
+            <tr><td>고령</td><td>70세 이상</td><td>정상 상한 7.5, 치료 권고 안 함</td></tr>
+            <tr><td>아급성 항진</td><td>TSH &lt; 0.1</td><td>65세 이상·골다공증·심질환 → 메티마졸 5 mg</td></tr>
+            <tr><td>임신</td><td>TSH 0.4~4</td><td>β-hCG 영향으로 생리적으로 낮아짐</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        <span class="label">메모</span>
+        <p>도플러 소견은 기능과 일치하지 않는 경우가 많다. 신호가 없다고 항진증을 배제하지 않는다.
+          초음파는 형태(결절) 판단에 쓰고, 기능은 혈액으로 판단한다.</p>
+      </div>
+      <p class="src">출처: 원노트 <em>Endo 학회 정리</em> (2026-09-10) — 갑상선기능 파트.</p>
+    </section>
+
+    <div class="pager">
+      <a href="liver.html">← 간수치 상승</a>
+      <a href="index.html">개요 →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>개인 학습 정리. 진료 지침을 대체하지 않는다. 용량은 원노트에 적힌 예시이며 실제 처방은 환자 상태에 따라 다르다.</p>
+    <p><a href="https://kimhs950627.github.io/">← 학습 페이지 허브</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

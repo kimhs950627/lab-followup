@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>검진 Lab 이상 후속관리 — 혈뇨·간기능·갑상선기능</title>
+<meta name="description" content="건강검진에서 흔히 마주치는 소변·간기능·갑상선기능 이상을 어떻게 재검하고 언제 의뢰할지 정리한 개인 학습 노트.">
+<meta property="og:title" content="검진 Lab 이상 후속관리">
+<meta property="og:description" content="혈뇨·단백뇨, 간수치 상승, 무증상 갑상선기능이상의 재검 주기와 의뢰 기준.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Lab Follow-up · 검진 후속관리</a>
+    <nav class="nav" aria-label="장 이동">
+      <a href="index.html" aria-current="page">개요</a>
+      <a href="urine.html">소변</a>
+      <a href="liver.html">간기능</a>
+      <a href="thyroid.html">갑상선</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Primary care · 검진 결과 설명</p>
+      <h1>흔한 lab 이상, 다음에 무엇을 할 것인가</h1>
+      <p class="lede">혈뇨·단백뇨, 간수치 상승, 무증상 갑상선기능이상. 검진에서 자주 나오지만
+        “재검”과 “의뢰” 사이에서 망설이게 되는 세 가지를 같은 형식으로 정리했다.</p>
+      <div class="meta">
+        <span>원노트: Nephro · GI · Endo 학회 정리</span>
+        <span>2026-11</span>
+        <span>개인 학습 정리</span>
+      </div>
+    </div>
+
+    <section aria-labelledby="triage">
+      <h2 id="triage"><span class="num">00 — Triage</span>이상 수치를 만났을 때의 첫 갈림길</h2>
+      <p>수치 자체보다 <strong>증상·반복성·다른 검사와의 조합</strong>이 다음 단계를 정한다.
+        세 장 모두 “한 번 더 확인 → 원인 감별 → 의뢰 여부” 순서를 따른다.</p>
+
+      <figure class="flow">
+        <svg viewBox="0 0 880 430" role="img" aria-labelledby="triageTitle triageDesc">
+          <title id="triageTitle">검진 lab 이상에서 세 갈래로 나뉘는 흐름</title>
+          <desc id="triageDesc">검진 이상 소견에서 소변, 간기능, 갑상선기능 세 갈래로 나뉘고 각각 재검과 의뢰 기준이 있다.</desc>
+          <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#8f8878"/>
+            </marker>
+            <style>
+              .b { fill: #fffdf8; stroke: #cfc6b3; stroke-width: 1.2; }
+              .bt { font-size: 14px; fill: #1a1714; }
+              .bs { font-size: 11.5px; fill: #6f6759; }
+              .k { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; fill: #0f5f63; letter-spacing: .08em; }
+              .ln { stroke: #8f8878; stroke-width: 1.2; fill: none; marker-end: url(#ar); }
+            </style>
+          </defs>
+
+          <rect class="b" x="330" y="18" width="220" height="62" rx="3" fill="#dcebea" stroke="#0f5f63"/>
+          <text class="k" x="350" y="42">START</text>
+          <text class="bt" x="350" y="62">검진 이상 소견</text>
+
+          <path class="ln" d="M440 80 V120 H160 V150"/>
+          <path class="ln" d="M440 80 V120 H440 V150"/>
+          <path class="ln" d="M440 80 V120 H720 V150"/>
+
+          <rect class="b" x="60" y="150" width="200" height="56" rx="3"/>
+          <text class="k" x="74" y="170">URINE</text>
+          <text class="bt" x="74" y="191">혈뇨 · 단백뇨</text>
+
+          <rect class="b" x="340" y="150" width="200" height="56" rx="3"/>
+          <text class="k" x="354" y="170">LIVER</text>
+          <text class="bt" x="354" y="191">AST · ALT · ALP · rGTP</text>
+
+          <rect class="b" x="620" y="150" width="200" height="56" rx="3"/>
+          <text class="k" x="634" y="170">THYROID</text>
+          <text class="bt" x="634" y="191">TSH · fT4</text>
+
+          <path class="ln" d="M160 206 V246"/>
+          <path class="ln" d="M440 206 V246"/>
+          <path class="ln" d="M720 206 V246"/>
+
+          <rect class="b" x="60" y="246" width="200" height="52" rx="3"/>
+          <text class="bs" x="74" y="268">반복 확인 · 유발 요인</text>
+          <text class="bs" x="74" y="286">(운동, 약, 일시적 상승)</text>
+
+          <rect class="b" x="340" y="246" width="200" height="52" rx="3"/>
+          <text class="bs" x="354" y="268">패턴 판정 · 5대 원인</text>
+          <text class="bs" x="354" y="286">(비만·바이러스·술·자가·약)</text>
+
+          <rect class="b" x="620" y="246" width="200" height="52" rx="3"/>
+          <text class="bs" x="634" y="268">3개월 후 재검</text>
+          <text class="bs" x="634" y="286">(TPO 포함)</text>
+
+          <path class="ln" d="M160 298 V332 H440 V352"/>
+          <path class="ln" d="M440 298 V352"/>
+          <path class="ln" d="M720 298 V332 H440 V352"/>
+
+          <rect class="b" x="300" y="352" width="280" height="54" rx="3" fill="#f4e2d9" stroke="#9c3d1d"/>
+          <text class="k" x="316" y="374" fill="#9c3d1d">DECISION</text>
+          <text class="bt" x="316" y="394">경과관찰 vs 전문과 의뢰</text>
+        </svg>
+        <figcaption>그림 1. 세 영역 모두 “한 번 더” 확인한 뒤 결정한다. 첫 수치만으로 치료를 시작하지 않는다.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="chapters">
+      <h2 id="chapters"><span class="num">01 — Chapters</span>세 장으로 나눠 읽기</h2>
+      <div class="card-grid">
+        <a class="card" href="urine.html">
+          <span class="k">Chapter 01</span>
+          <h3>혈뇨와 단백뇨</h3>
+          <p>3회 소변검사, 영상검사, 3·6·12개월 추적. 기립성 단백뇨 감별까지.</p>
+        </a>
+        <a class="card" href="liver.html">
+          <span class="k">Chapter 02</span>
+          <h3>간수치 상승</h3>
+          <p>AST·ALT·ALP·rGTP 패턴, 원인 5개, 영상검사와 자가항체의 순서.</p>
+        </a>
+        <a class="card" href="thyroid.html">
+          <span class="k">Chapter 03</span>
+          <h3>무증상 갑상선기능이상</h3>
+          <p>한국 기준 TSH, 3개월 재검, 치료 시작 조건과 고령자 예외.</p>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="how">
+      <h2 id="how"><span class="num">02 — How to use</span>읽는 순서</h2>
+      <ol>
+        <li>검진 결과지에서 <strong>이상 항목</strong>을 확인하고 해당 장으로 바로 간다.</li>
+        <li>각 장 맨 위 <strong>결정 도해</strong>를 먼저 보고, 세부는 아래 표에서 확인한다.</li>
+        <li>수치·기준 중 <strong>“확인 필요”</strong> 표시는 원노트에 근거가 없어 비워 둔 자리다.</li>
+      </ol>
+      <div class="note">
+        <span class="label">주의</span>
+        <p>이 문서는 개인 학습 정리다. 진료 지침을 대체하지 않으며, 실제 판단은 환자의 증상·병력·검사실 기준치와
+          최신 가이드라인을 함께 본다.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>출처: 본인 원노트 <em>Nephro 학회 정리</em>(2026-09-17), <em>GI 학회 정리</em>(2026-11-03),
+      <em>Endo 학회 정리</em>(2026-09-10). 수치와 기준은 원노트에 적힌 내용을 그대로 옮겼고,
+      원노트에 없는 값은 “확인 필요”로 표시했다.</p>
+    <p><a href="https://kimhs950627.github.io/">← 학습 페이지 허브</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
